@@ -1,0 +1,104 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.menuToggle {
+    display: block;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.menuIcon {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.menuIcon:before,
+.menuIcon:after {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuIcon:before {
+    transform: translateY(-0.5rem);
+}
+
+.menuIcon:after {
+    transform: translateY(0.5rem);
+}
+
+.navList {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.navList.open {
+    display: flex;
+}
+
+.navListItem {
+    margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .menuToggle {
+        display: none;
+    }
+
+    .nav {
+        justify-content: flex-end;
+    }
+
+    .navList {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+        top: auto;
+        left: auto;
+        right: auto;
+        z-index: auto;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .navListItem:not(:last-child) {
+        margin-right: 1rem;
+    }
+}

@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+}
+
+:root {
+    /* Fonts */
+    --title: 'Poppins', sans-serif;
+    --textFont: 'Poppins', sans-serif;
+
+    /* Color text */
+    --titles: #C9D9BC;
+    --text: #fff;
+
+    /* background-color */
+    --bg: #1C2130;
+
+    /* Highlights */
+    --purple: #8B12FA;
+    --blue: #0FACE1;
+    --dark: #1A0C15;
+    --light: #dee6d8;
+
+    /* Scrollbar Color */
+    --bg-opac: #5958581a;
+    --bg-thumb: #34343452;
+}
+
+span {
+    color: #3884fd;
+    font-weight: 600;
+}
+
+select {
+    cursor: pointer;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+a:hover {
+    all: unset;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--text);
+    font-family: var(--textFont);
+    font-size: 1.3rem;
+}
+
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--title);
+    color: var(--titles);
+}
+
+
+/* Set the max width to 100% and center the content horizontally */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Center the text in the header and footer */
+footer p {
+    text-align: center;
+    margin: 0;
+    line-height: 4rem;
+    font-size: 0.9rem;
+}
