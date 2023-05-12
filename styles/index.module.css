@@ -1,0 +1,11 @@
+.slogan {
+    margin-top: 1.7rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+.slogan span {
+    font-style: italic;
+}

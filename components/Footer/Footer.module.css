@@ -1,0 +1,7 @@
+.footerInfo p {
+    font-size: 0.9rem;
+}
+
+.footerInfo span {
+    color: var(--blue)
+}

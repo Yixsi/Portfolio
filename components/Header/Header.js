@@ -12,7 +12,7 @@ export default function Header() {
     }
 
     return (
-        <header className={styles.nav}>
+        <header>
             <nav className={styles.navList}>
                 <button className={styles.menuToggle} onClick={toggleMenu}>
                     <FiMenu />

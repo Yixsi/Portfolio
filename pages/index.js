@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import Layout from '../components/Layout'
+import Head from 'next/head';
+import Layout from '../components/Layout';
+import styles from '../styles/index.module.css';
 
 export default function Home() {
     return (
@@ -14,7 +15,7 @@ export default function Home() {
 
             <Layout>
                 <h1>Full Stack Developer</h1>
-                <p>Solving problems, one detail at a time</p>
+                <p className={styles.slogan}>Solving problems, one <span>detail</span> at a time.</p>
             </Layout>
         </>
     )

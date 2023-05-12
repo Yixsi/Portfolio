@@ -12,26 +12,31 @@
     --textFont: 'Poppins', sans-serif;
 
     /* Color text */
-    --titles: #C9D9BC;
-    --text: #fff;
+    --text: #e9eee6;
 
     /* background-color */
     --bg: #1C2130;
 
     /* Highlights */
-    --purple: #8B12FA;
+    --purple: #6d138b;
     --blue: #0FACE1;
-    --dark: #1A0C15;
+    --dark: #543e3e2e;
     --light: #dee6d8;
 
-    /* Scrollbar Color */
-    --bg-opac: #5958581a;
-    --bg-thumb: #34343452;
 }
 
-span {
-    color: #3884fd;
-    font-weight: 600;
+main {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100vh;
+    width: 100vw;
 }
 
 select {
@@ -59,25 +64,47 @@ p {
 
 h1,
 h2,
-h3 {
-    margin-top: 0;
-    margin-bottom: 0;
+h3,
+li {
     font-family: var(--title);
     color: var(--titles);
 }
 
+h1 {
+    text-shadow: 2px 2px 2px var(--blue);
+    font-size: 4rem;
+    letter-spacing: -0.2rem;
+    color: var(--purple);
+}
 
-/* Set the max width to 100% and center the content horizontally */
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
+li {
+    color: var(--text);
+    padding: 0.3rem 0.7rem;
+    font-weight: bold;
+}
+
+li:hover {
+    color: var(--blue);
+    text-shadow: 0 0 15px var(--blue);
+    transition: .3s;
+
 }
 
 /* Center the text in the header and footer */
-footer p {
+
+header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    margin: 2rem 2rem;
+}
+
+footer {
     text-align: center;
     margin: 0;
     line-height: 4rem;
     font-size: 0.9rem;
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    align-self: baseline;
+    margin: auto;
 }
