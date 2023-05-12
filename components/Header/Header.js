@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
-import styles from './header.module.css';
+import styles from './Header.module.css';
 import { FiMenu } from 'react-icons/fi';
 
 export default function Header() {
@@ -13,7 +13,7 @@ export default function Header() {
 
     return (
         <header>
-            <nav className={styles.navList}>
+            <nav>
                 <button className={styles.menuToggle} onClick={toggleMenu}>
                     <FiMenu />
                 </button>

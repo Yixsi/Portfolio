@@ -1,7 +1,15 @@
 .footerInfo p {
-    font-size: 0.9rem;
+    font-size: 0.6rem;
 }
 
 .footerInfo span {
     color: var(--blue)
+}
+
+@media (min-width: 768px) {
+
+    .footerInfo p {
+        font-size: 0.9rem;
+    }
+
 }

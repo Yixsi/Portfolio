@@ -44,9 +44,9 @@
 }
 
 .navList {
-    display: none;
     list-style: none;
     z-index: 0;
+    display: none;
 }
 
 .navList.open {
@@ -61,11 +61,15 @@
     .menuToggle {
         display: none;
     }
-    .nav {
+
+    .navList {
         display: flex;
+        justify-content: flex-end;
     }
 
     .navListItem:hover {
-        border-bottom: 1px solid var(--blue);
+        color: var(--blue);
+        text-shadow: 0 0 15px var(--blue);
+        transition: .3s;
     }
 }

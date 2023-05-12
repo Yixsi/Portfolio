@@ -1,0 +1,43 @@
+.contact {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contactTitle {
+    grid-column: 2 / 3;
+    margin: auto;
+}
+
+.info {
+    grid-column: 2 / 4;
+    display: flex;
+    gap: 1rem;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.formContainer {
+    grid-column: 1/2;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input {
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid var(--dark);
+}
+
+.textarea {
+    border: none;
+    outline: none;
+    border: 1px solid var(--dark);
+    resize: none;
+}
