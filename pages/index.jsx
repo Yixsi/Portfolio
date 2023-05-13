@@ -1,0 +1,21 @@
+import Layout from '../components/Layout.jsx';
+import styles from '../styles/index.module.css';
+import Head from 'next/head';
+
+
+export default function Home() {
+    return (
+        <>
+            <Head>
+                <link rel='preconnect' href='https://fonts.googleapis.com' />
+                <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+                <link href='https://fonts.googleapis.com/css2?family=Cabin+Condensed&family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap' rel='stylesheet' />
+            </Head>
+
+            <Layout title='Home' description='description' content='Welcome to my Next.js Portfolio!'>
+                <h1>Yisney Soto Avendaño</h1>
+                <p className={styles.slogan}>Solving problems, one <span>detail</span> at a time.</p>
+            </Layout>
+        </>
+    )
+}

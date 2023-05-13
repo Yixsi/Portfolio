@@ -29,7 +29,6 @@
 main {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-    margin: auto;
     display: grid;
 }
 
@@ -66,13 +65,13 @@ p {
 
 h1,
 h2,
-h3,
-li {
+h3 {
     color: var(--titles);
 }
 
 h1 {
     font-size: 2rem;
+    font-weight: 400;
     text-align: center;
     letter-spacing: -0.2rem;
     color: var(--purple);
@@ -82,15 +81,8 @@ h1 {
 li {
     color: var(--text);
     padding: 0.3rem 0.7rem;
-    font-weight: bold;
 }
 
-li:hover {
-    color: var(--blue);
-    text-shadow: 0 0 15px var(--blue);
-    transition: .3s;
-
-}
 
 /* Center the text in the header and footer */
 
