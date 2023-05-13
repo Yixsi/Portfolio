@@ -1,16 +1,10 @@
-import Head from 'next/head'
 import Layout from '../components/Layout';
 import styles from '../styles/contact.module.css';
 
 export default function Contact() {
     return (
         <>
-            <Head>
-                <title>Contact</title>
-                <meta name='description' content='about me' />
-            </Head>
-
-            <Layout>
+            <Layout title='Contact' description='description' content='Get in touch with me'>
                 <div className={styles.contact}>
                     <h2 className={styles.contactTitle}>Contact</h2>
 
@@ -19,6 +13,7 @@ export default function Contact() {
                             <li>Santa Marta - Colombia</li>
                             <li>+57 323-598-16-92</li>
                             <li>yixsi3103@gmail.com</li>
+                            <li>Icons</li>
                         </ul>
 
                     </aside>
