@@ -21,9 +21,9 @@ export default function Header() {
           <FiMenu />
         </button>
         <Image
-          src='/++YS_LOGO.png'
+          src='/YS-logo.png'
           alt='Logo'
-          width={150}
+          width={100}
           height={80}
         />
         <ul className={`${styles.navList} ${isMenuOpen ? styles.open : ''}`}>

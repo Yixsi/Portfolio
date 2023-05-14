@@ -15,7 +15,7 @@ export default function Contact() {
                 <form className={styles.form}>
                     <input type='name' placeholder='Name' className={styles.input} />
                     <input type='email' placeholder='Email' className={styles.input} />
-                    <textarea placeholder='Let me know what you think...' className={styles.textarea} rows='8'></textarea>
+                    <textarea placeholder='Let me know what you think...' className={styles.textarea} rows='5'></textarea>
                     <button type='submit' className={styles.button}>Send <BsSendFill className={styles.buttonIcon}/></button>
                 </form>
             </article>

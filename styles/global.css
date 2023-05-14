@@ -63,12 +63,6 @@ p {
 }
 
 
-h1,
-h2,
-h3 {
-    color: var(--titles);
-}
-
 h1 {
     font-size: 2rem;
     font-weight: 400;
@@ -76,6 +70,13 @@ h1 {
     letter-spacing: -0.2rem;
     color: var(--purple);
     text-shadow: 1px 0.8px 2px var(--blue);
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--text);
+    text-shadow: 0px 0px 5px #000;
 }
 
 li {
@@ -110,6 +111,10 @@ footer {
         font-size: 2.7rem;
     }
 
+    h2 {
+        font-size: 1.6rem;
+    }
+
     p {
         font-size: 1rem;
     }
@@ -122,6 +127,10 @@ footer {
         text-shadow: 2px 2px 2px var(--blue);
     }
 
+    h2 {
+        font-size: 2rem;
+    }
+
     p {
         font-size: 1.2rem;
     }
@@ -131,7 +140,13 @@ footer {
 
     h1 {
         font-size: 4rem;
-        
+
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-top: -2rem;
+        margin-bottom: 1.3rem;
     }
 
     p {
