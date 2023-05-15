@@ -56,14 +56,15 @@
 
 .navListItem {
     margin: 0.5rem 0;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .activeLink {
     transition: .3s;
     align-self: center;
-    border-bottom: 1px solid var(--blue);
-    font-weight: 600;
+    color: var(--blue);
+    font-weight: 400;
+    transition: .3s ease-out;
 }
 
 @media (min-width: 768px) {
@@ -79,6 +80,6 @@
     .navListItem:hover {
         color: var(--blue);
         text-shadow: 0 0 15px var(--blue);
-        transition: .3s;
+        
     }
 }

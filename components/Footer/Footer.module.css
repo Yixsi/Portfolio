@@ -1,15 +1,44 @@
 .footerInfo p {
     font-size: 0.6rem;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .footerInfo span {
-    color: var(--blue)
+    color: var(--purple);
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #000;
 }
 
-@media (min-width: 768px) {
+.media {
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1rem;
+}
+
+.socialIcon:hover {
+    cursor: pointer;
+    color: var(--purple);
+}
+
+@media (max-width: 330px) {
 
     .footerInfo p {
-        font-size: 0.9rem;
+        font-size: 0.4rem;
+    }
+
+    .media {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (min-width: 400px) {
+
+    .footerInfo p {
+        font-size: 0.8rem;
     }
 
 }

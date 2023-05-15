@@ -9,29 +9,29 @@ export default function Contact() {
     return (
         <Layout title='Contact' description='description' content='Get in touch with me'>
             <h2 className={styles.contactTitle}>CONTACT</h2>
+            <section className={styles.contactSection}>
+                <article className={styles.formContainer}>
+                    <form className={styles.form}>
+                        <input type='name' placeholder='Name' className={styles.input} />
+                        <input type='email' placeholder='Email' className={styles.input} />
+                        <textarea placeholder='Let me know what you think...' className={styles.textarea} rows='6'></textarea>
+                        <button type='submit' className={styles.button}>Send <BsSendFill className={styles.buttonIcon}/></button>
+                    </form>
+                </article>
 
-
-            <article className={styles.formContainer}>
-                <form className={styles.form}>
-                    <input type='name' placeholder='Name' className={styles.input} />
-                    <input type='email' placeholder='Email' className={styles.input} />
-                    <textarea placeholder='Let me know what you think...' className={styles.textarea} rows='5'></textarea>
-                    <button type='submit' className={styles.button}>Send <BsSendFill className={styles.buttonIcon}/></button>
-                </form>
-            </article>
-
-            <aside className={styles.info}>
-                <ul>
-                    <li><span><ImLocation2 /></span>Santa Marta - Colombia</li>
-                    <li><span><BsFillPhoneFill /></span>+57 323-598-16-92</li>
-                    <li><span><BsMailbox2 /></span>yixsi3103@gmail.com</li>
-                </ul>
-                <div className={styles.social}>
-                    <BsLinkedin className={styles.socialIcon} />
-                    <AiFillGithub className={styles.socialIcon} />
-                    <AiFillInstagram className={styles.socialIcon} />
-                </div>
-            </aside>
+                <aside className={styles.info}>
+                    <ul>
+                        <li><span><ImLocation2 /></span>Santa Marta - Colombia</li>
+                        <li><span><BsFillPhoneFill /></span>+57 323-598-16-92</li>
+                        <li><span><BsMailbox2 /></span>yixsi3103@gmail.com</li>
+                    </ul>
+                    <div className={styles.social}>
+                        <BsLinkedin className={styles.socialIcon} />
+                        <AiFillGithub className={styles.socialIcon} />
+                        <AiFillInstagram className={styles.socialIcon} />
+                    </div>
+                </aside>
+            </section>
         </Layout>
     )
 }

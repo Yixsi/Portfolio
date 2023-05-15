@@ -12,7 +12,7 @@ export default function Layout({ children, title, description, content }) {
                 <link rel='icon' href='../public/favicon.ico'></link>
             </Head>
             <Header />
-                <main >{children}</main>
+            <main >{children}</main>
             <Footer />
         </div>
     );
