@@ -9,12 +9,12 @@ export default function Footer() {
                 <p>&copy; {new Date().getFullYear()} 
                     <span>|</span> Yisney Soto <span>|</span>
                     Full Stack Developer <span>|</span>
-                    <div className={styles.media}>
+                </p>
+                <div className={styles.media}>
                         <BsLinkedin className={styles.socialIcon} />
                         <AiFillGithub className={styles.socialIcon} />
                         <BsFillEnvelopeAtFill className={styles.socialIcon} />
-                    </div>
-                </p>
+                </div>
             </div>
         </footer>
     )

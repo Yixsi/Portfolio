@@ -11,9 +11,9 @@ export default function About() {
                 <h2 className={styles.title}>ABOUT</h2>
                 <section className={styles.profile}>
                     <article>
-                        <p className={styles.text}>Hi, I'm an enthusiastic and detail-oriented web developer, who enjoys building solutions that meet the needs of clients and end-users. I'm always eager to learn and apply the best practices in my code to ensure good performance for the sites I create or collaborate on with my teams.</p>
+                        <p className={styles.text}>Hi, I&#39;m an enthusiastic and detail-oriented web developer, who enjoys building solutions that meet the needs of clients and end-users. I&#39;m always eager to learn and apply the best practices in my code to ensure good performance for the sites I create or collaborate on with my teams.</p>
                         <div className={styles.more}>
-                            <span>See more </span><a href='CV_SOTO' download className={styles.cv}>CV <BsDownload className={styles.cvIcon} /></a>
+                            <span>See more </span><a href='/CV_SOTO.pdf' download className={styles.cv}>CV <BsDownload className={styles.cvIcon} /></a>
                         </div>
                     </article>
                     <aside>
