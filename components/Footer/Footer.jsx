@@ -11,9 +11,9 @@ export default function Footer() {
                     Full Stack Developer <span>|</span>
                 </p>
                 <div className={styles.media}>
-                        <BsLinkedin className={styles.socialIcon} />
-                        <AiFillGithub className={styles.socialIcon} />
-                        <BsFillEnvelopeAtFill className={styles.socialIcon} />
+                    <a href='https://www.linkedin.com/in/yisney-soto/' target='_blank'><BsLinkedin className={styles.socialIcon} /></a>
+                    <a href='https://github.com/Yixsi' target='_blank'><AiFillGithub className={styles.socialIcon} /></a>
+                    <a href="mailto:yixsi3103@gmail.com"><BsFillEnvelopeAtFill className={styles.socialIcon} /></a>
                 </div>
             </div>
         </footer>

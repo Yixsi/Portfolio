@@ -92,6 +92,11 @@
 
 }
 
+.error {
+    font-size: 0.6rem;
+    color: var(--blue);
+}
+
 @media (min-width: 750px) {
 
     .contactSection {
