@@ -36,12 +36,16 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log(Object.entries(errors).length);
         if (!Object.entries(errors).length) {
             axios
-            .post('/api/handler', mailData)
-            .then((res) => res && swal(res))
-            .catch((error) => swal(error.response.data.error));
+            .post('/api/handler', mailData).then((res) => res && swal(
+                {
+                    title: "Great!",
+                    text: res.data.message,
+                    icon: "success",
+                    }
+                
+                    )).catch((error) => error && swal(error.response.data.error));
         } else {
             swal('Empty or invalid data.')
         }

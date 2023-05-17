@@ -11,6 +11,7 @@
     width: 3rem;
     position: relative;
     z-index: 1;
+    background-color: transparent;
 }
 
 .menuIcon {

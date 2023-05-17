@@ -17,9 +17,11 @@ export default function Header() {
   return (
     <header>
       <nav className={styles.nav}>
+        <Link href='/' className={styles.menuToggle} onClick={toggleMenu}>
         <button className={styles.menuToggle} onClick={toggleMenu}>
           <FiMenu />
         </button>
+      </Link>
         <Image
           src='/YS-logo.png'
           alt='Logo'
@@ -35,6 +37,11 @@ export default function Header() {
           <li className={router.pathname === '/about' ? styles.activeLink : styles.navListItem}>
             <Link href='/about'>
               About
+            </Link>
+          </li>
+          <li className={router.pathname === '/projects' ? styles.activeLink : styles.navListItem}>
+            <Link href='/projects'>
+              Projects
             </Link>
           </li>
           <li className={router.pathname === '/contact' ? styles.activeLink : styles.navListItem}>
