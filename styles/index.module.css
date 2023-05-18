@@ -1,0 +1,10 @@
+.slogan {
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-weight: 300;
+    
+}
+
+.slogan span {
+    font-style: italic;
+}
