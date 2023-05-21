@@ -7,22 +7,21 @@ export default function Project({ title, role, description, tasks, image, techs,
             <Image
                 src={image}
                 alt={title}
-                layout="responsive"
                 width={1366}
-                height={715}
+                height={768}
                 className={styles.img}
             />
             <div className={styles.info}>
                 <ul>
-                    <li><h3 className={styles.projectName}>{title}</h3></li>
-                    <li><h5 className={styles.role}>{role}</h5></li>
+                    <li><span className={styles.projectName}>{title} - {role}</span></li>
                     <li><p className={styles.projectP}>{description}</p></li>
-                    <li>{tasks}</li>
-                    <li><b>Technologies:</b></li>
+                    <li><span className={styles.subtitles}>Tasks:</span></li>
+                    <li><p className={styles.projectP}>{tasks}</p></li>
+                    <li><span className={styles.subtitles}>Technologies:</span></li>
                     <li><span className={styles.techs}>{techs?.map((el, key) => <span key={key}> {el} </span>)}</span></li>
-                    <li><b>Skills developed:</b></li>
+                    <li><span className={styles.subtitles}>Skills developed:</span></li>
                     <li><p className={styles.projectP}>{skills}</p></li>
-                    <li>{link}</li>
+                    <li><a href={link} target='_blank'>{link}</a></li>
                 </ul>
 
             </div>
