@@ -16,7 +16,8 @@
 
 .img {
     width: auto;
-    height: 50vh;
+    height: 30vh;
+    
 }
 
 .info ul li {
@@ -51,11 +52,11 @@
     font-size: 0.9rem;
 }
 
-@media (max-width: 600px) {
-    .info ul li h5 {
-        font-size: 0.6rem;
-        font-weight: 300;
-        font-style: italic;
+@media (min-width: 300px) {
+    .img {
+            width: auto;
+            height: 40vh;
+    
     }
 }
 
@@ -78,6 +79,7 @@
 
     .img {
         height: auto;
+        width: 50vw;
     }
 
     .info ul li {

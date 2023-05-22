@@ -79,7 +79,7 @@ h2 {
 
 li {
     color: var(--text);
-    padding: 0.3rem 0.7rem;
+    padding: 0.3rem 0.3rem;
 }
 
 .confirmSent {
@@ -92,7 +92,7 @@ li {
 header {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    margin: 0 2rem;
+    margin: 0;
 }
 
 main {
@@ -140,6 +140,15 @@ footer {
 
     p {
         font-size: 1.2rem;
+    }
+
+    li {
+        color: var(--text);
+        padding: 0.3rem 0.7rem;
+    }
+
+    header {
+        margin: 0 1rem;
     }
 }
 

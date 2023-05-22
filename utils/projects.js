@@ -67,8 +67,8 @@ export const projects = [
     {
         title: 'Rick and Morty',
         role: 'Front-end Developer',
-        description: 'This is an app that consumes the Rick and Morty API and allows the users to check the more than a hundred characters and has a dynamic pagination to keep bringing all the data. It also enables users to add/delete characters from their favorites list and use the search bar to find matching characters.',
-        tasks: 'I used a minimalistic but cool design to attract the target public. I used redux actions to request the data from the API and react to render the client interface. This project helped me understand the life cycle of react components.',
+        description: 'This is an app that consumes the Rick and Morty API and allows the users check more than a hundred characters and also add/delete characters from their favorites. Additionaly, they can use the search bar to find specific characters.',
+        tasks: 'Web design, API requests,render information, dinamic pagination, redux and local states to control favorites.',
         image: '/projects/r&m.jpg',
         techs: [<IoLogoReact key='1' title='ReactJS'/>,
                 <IoLogoJavascript key='2' title='JavaScript'/>,

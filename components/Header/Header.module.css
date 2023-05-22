@@ -4,69 +4,14 @@
     justify-content: space-between;
 }
 
-.menuToggle {
-    display: block;
-    cursor: pointer;
-    height: 3rem;
-    width: 3rem;
-    position: relative;
-    z-index: 1;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-size: 1.8rem;
-    color: var(--blue);
-}
-
-.menuToggle:hover {
-    font-size: 1.8rem;
-    color: var(--purple);
-}
-
-.menuIcon {
-    display: block;
-    width: 1.5rem;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease-in-out;
-}
-
-.menuIcon:before,
-.menuIcon:after {
-    content: "";
-    display: block;
-    width: 1.5rem;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-}
-
-.menuIcon:before {
-    transform: translateY(-0.5rem);
-}
-
-.menuIcon:after {
-    transform: translateY(0.5rem);
-}
-
-.showLogo {
-    width: 60px;
-    height: auto;
-}
-
-.hideLogo {
-    display: none;
+.logo {
+    width: auto;
+    height: 50px;
 }
 
 .navList {
     list-style: none;
-    z-index: 0;
-    display: none;
+    display: flex;
 }
 
 .navList.open {
@@ -75,7 +20,6 @@
 
 .navListItem {
     margin: 0.5rem 0;
-    font-weight: 400;
 }
 
 .activeLink {
@@ -86,9 +30,13 @@
     transition: .3s ease-out;
 }
 
-@media (min-width: 768px) {
+.icon {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 640px) {
     .menuToggle {
-        display: none;
+            display: none;
     }
 
     .navList {
@@ -100,5 +48,10 @@
         color: var(--blue);
         text-shadow: 0 0 15px var(--blue);
         
+    }
+
+    .logo {
+        width: 60px;
+        height: auto;
     }
 }
