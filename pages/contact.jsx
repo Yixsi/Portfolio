@@ -43,7 +43,7 @@ export default function Contact() {
                     title: "Great!",
                     text: res.data.message,
                     icon: "success",
-                    }
+                }
                 
                     )).catch((error) => error && swal(error.response.data.error));
         } else {

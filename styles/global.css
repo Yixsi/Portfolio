@@ -112,6 +112,12 @@ footer {
 
 /* Media quieries global styles*/
 
+@media (max-width: 500px) {
+    .swal-modal {
+            width: calc(100% - 40px);
+    }
+}
+
 @media (min-width: 400px) {
 
     h1 {
