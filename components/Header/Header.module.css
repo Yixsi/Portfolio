@@ -35,9 +35,6 @@
 }
 
 @media (min-width: 640px) {
-    .menuToggle {
-            display: none;
-    }
 
     .navList {
         display: flex;

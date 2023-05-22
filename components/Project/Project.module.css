@@ -1,7 +1,10 @@
 .card {
+    grid-column: 1 / 4;
+    grid-row: auto;
     padding: 1rem;
     gap: 2rem;
     margin-bottom: 2rem;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -16,8 +19,7 @@
 
 .img {
     width: auto;
-    height: 30vh;
-    
+    height: 30vh;    
 }
 
 .info ul li {
@@ -26,7 +28,7 @@
 
 .projectP {
     font-weight: 300;
-    /* font-size: 0.8rem; */
+    font-size: 0.8rem;
 }
 
 .techs {
@@ -54,8 +56,9 @@
 
 @media (min-width: 300px) {
     .img {
-            width: auto;
-            height: 40vh;
+            width: 85vw;
+            height: auto;
+            justify-self: center;
     
     }
 }
@@ -63,7 +66,7 @@
 
 @media (min-width: 760px) {
     .card {
-        justify-content: space-around;
+        grid-column: 1 / 4;
         gap: 2rem;
         display: flex;
     }

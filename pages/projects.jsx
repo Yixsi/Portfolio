@@ -7,7 +7,7 @@ export default function Projects() {
   return (
         <Layout title='Projects' description='Projects page' content='Chack my projects!'>
               <h2 className={styles.title}>PROJECTS</h2>
-              <div className={styles.cardsContainer}>
+              <>
                     {
                       projects?.map((obj, key) => {
                         return (
@@ -26,7 +26,7 @@ export default function Projects() {
                         )
                       })
                     }
-              </div> 
+              </> 
         </Layout>
   )
 }
