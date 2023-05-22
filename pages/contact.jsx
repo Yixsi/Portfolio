@@ -2,8 +2,8 @@
 import Layout from '../components/Layout.jsx';
 import styles from '../styles/contact.module.css';
 import { ImLocation2 } from 'react-icons/im';
-import { BsFillPhoneFill, BsMailbox2, BsLinkedin, BsSendFill } from 'react-icons/bs';
-import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { BsFillPhoneFill, BsMailbox2, BsLinkedin, BsSendFill, BsFillEnvelopeAtFill } from 'react-icons/bs';
+import { AiFillGithub } from 'react-icons/ai';
 import { validate } from '../utils/validate';
 import axios from 'axios';
 import swal from 'sweetalert';
@@ -79,9 +79,9 @@ export default function Contact() {
                         <li><span><BsMailbox2 /></span>yixsi3103@gmail.com</li>
                     </ul>
                     <div className={styles.social}>
-                        <BsLinkedin className={styles.socialIcon} />
-                        <AiFillGithub className={styles.socialIcon} />
-                        <AiFillInstagram className={styles.socialIcon} />
+                        <a href='https://www.linkedin.com/in/yisney-soto/' target='_blank'><BsLinkedin className={styles.socialIcon} /></a>
+                        <a href='https://github.com/Yixsi' target='_blank'><AiFillGithub className={styles.socialIcon} /></a>
+                        <a href="mailto:yixsi3103@gmail.com"><BsFillEnvelopeAtFill className={styles.socialIcon} /></a>
                     </div>
                 </aside>
             </section>
