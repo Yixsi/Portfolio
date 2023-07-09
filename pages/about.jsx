@@ -19,7 +19,7 @@ export default function About() {
                     <aside>
                         <Image
                             src='/me.png'
-                            alt='Yisney'
+                            alt='Yisney_Soto'
                             width={151}
                             height={229}
                             className={styles.me}
